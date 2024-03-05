@@ -20,12 +20,15 @@ zstyle ':completion:*' menu select
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/catppuccin-zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Uncomment this and the bindings below if you want to use history substring search
+#source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # Bindings for history substring searching
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+#bindkey '^[[A' history-substring-search-up
+#bindkey '^[[B' history-substring-search-down
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
