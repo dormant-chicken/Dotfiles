@@ -1,0 +1,13 @@
+[window]
+opacity = 0.9
+
+[font]
+normal = { family = "JetBrainsMonoNerdFont", style = "Medium" }
+bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
+italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
+bold_italic = { family = "JetBrainsMonoNerdFont", style = "Bold Italic" }
+size = 14
+offset = { x = 0, y = 0 }
+
+[cursor]
+style = { shape = "Underline", blinking = "Always" }
