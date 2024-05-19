@@ -1,0 +1,29 @@
+anchor = top
+width = 100%
+height = 32
+history = false
+text-cursor = true
+horizontal = true
+font-size = 14
+prompt-text = " Search: "
+font = /usr/share/fonts/TTF/JetBrainsMonoNerdFont-SemiBold.ttf
+outline-width = 0
+border-width = 3
+border-color = #89b4fa
+
+text-color = #ffffff
+text-cursor-color = #ffffff
+prompt-color = #cdd6f4
+input-color = #f38ba8
+background-color = #1e1e2e
+selection-color = #7f849c
+selection-match-color = #f38ba8
+
+text-cursor-style = bar
+min-input-width = 175
+result-spacing = 30
+padding-top = 5
+padding-bottom = 0
+padding-left = 0
+padding-right = 0
+hint-font = false
