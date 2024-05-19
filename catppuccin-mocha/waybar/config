@@ -1,0 +1,63 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    // "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 2, // Gaps between modules
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "backlight", "battery"],
+    // Modules configuration
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%A, %b %d %Y %I:%M}"
+    },
+    "cpu": {
+        "format": "{usage}% CPU",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% RAM"
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% Backlight",
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 25
+        },
+        "format": "{capacity}% Bat",
+        "format-charging": "{capacity}% Charging",
+        "format-plugged": "{capacity}% Plugged",
+        "format-alt": "{time} Bat",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "({signalStrength}%) Connected",
+        "format-ethernet": "{ipaddr}/{cidr} Eth",
+        "tooltip-format": "{ifname} via {gwaddr} Eth",
+        "format-linked": "{ifname} (No IP) Eth",
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume}% Vol {format_source}",
+        "format-bluetooth": "{volume}% Bluetooth {format_source}",
+        "format-bluetooth-muted": "Muted Bluetooth {format_source}",
+        "format-muted": "Muted {format_source}",
+        "format-source": "{volume}% Input",
+        "format-source-muted": "Muted",
+        "on-click": "pavucontrol"
+    },
+}
