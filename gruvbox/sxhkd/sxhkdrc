@@ -12,7 +12,7 @@ super + d
 
 # rofi shutdown menu
 super + shift + d
-	rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu
+	rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # file manager
 super + e
