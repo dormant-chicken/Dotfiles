@@ -1,2 +1,9 @@
 # Dotfiles
-My configuration files for various color schemes
+
+## External Links
+
+### st (suckless terminal)
+
+* [gruvbox patch](https://st.suckless.org/patches/gruvbox/)
+
+* [scrollback patch](https://st.suckless.org/patches/scrollback/)
